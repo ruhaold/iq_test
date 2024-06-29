@@ -1,0 +1,9 @@
+import './data';
+import './js/mobileMenu';
+import './js/showTest';
+import './js/iqTest';
+import './js/createQuestionImg';
+import './js/createQuestionChooseOne';
+import './js/createQuestionColor';
+import './js/getAPIData';
+import './js/timer';

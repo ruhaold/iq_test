@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="manifest" href="./public//site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+
+
+  <title>Тест на определение IQ</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script defer type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="header__container">
+      <button type="button" class="header__menu-open" data-menu-open>
+        <svg class="mob-menu__icon" width="24" height="16">
+          <use class="mob-menu__icon-menu" href="./images/symbol-defs.svg#menu"></use>
+        </svg>
+      </button>
+
+      <div class="header__subcontainer is-hidden">
+        <img src="./images/header-icon.png" alt="Иконка мозг" class="header__icon">
+        <p class="header__title">Tест на определение IQ</p>
+      </div>
+    </div>
+
+    <div class="mob-menu is-hidden" data-menu>
+      <button type="button" class="mob-menu__btn-close" data-menu-close>
+        <svg width="28" height="28">
+          <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#cross"></use>
+        </svg>
+      </button>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#hero" class="navigation__link" data-main>Главная</a> </li>
+          <li class="navigation__item"><a href="#about" class="navigation__link" data-about>Информация о тесте</a></li>
+          <li class="navigation__item"><a href="#test" class="navigation__link" data-test>Пройти тест</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-content">
+      <div id="hero" class="hero">
+        <p class="hero__pretitle">Пройдите точный и быстрый</p>
+        <h1 class="hero__title">Тест на определение IQ</h1>
+
+        <button class="hero__button btn-start" type="button">Пройти тест</button>
+
+        <p class="hero__subtitle"><span class="hero__subtitle--bold">И получите рекомендации по развитию своего
+            интеллекта</span> <br> и улучшению финансового благосостояния и личной жизни
+        </p>
+
+        <div class="hero__details">
+          <button class="hero__button-up" type="button">
+            <svg width="7.27" height="7.27">
+              <use class="hero__icon-arrow" href="./images/symbol-defs.svg#arrow-up"></use>
+            </svg>
+          </button>
+          <p class="hero__details-text">Подробнее</p>
+        </div>
+      </div>
+
+      <div id="about" class="about">
+        <div class="about-container">
+          <div class="about__quotes-up">
+            <svg class="about__svg" width="23" height="23">
+              <use class="about__icon-quotes-up" href="./images/symbol-defs.svg#quotes-up"></use>
+            </svg>
+          </div>
+
+          <p class="about__text">Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта,
+            но
+            и выработать список рекомендаций для повышения этого показателя.</p>
+
+          <div class="about__quotes-down">
+            <svg class="about__svg" width="23" height="23">
+              <use class="about__icon-quotes-down" href="./images/symbol-defs.svg#quotes-down"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <p class="benefits__text">Также по результатам теста <br> <span class="benefits__text--bold">вы получите</span>
+          подробные <span class="benefits__text--bold">советы</span> по
+          определению наиболее перспективной <span class="benefits__text--bold">для вашего типа</span>
+          <span class="benefits__text--strong">интеллекта</span> <span class="benefits__text--bold">сферы
+            деятельности</span>, которая принесет вам скорейший финансовый результат.
+        </p>
+        <img src="./images/benefits-brain.png" alt="Сферы деятельности мозга" class="benefits__image">
+        <button class="benefits__button btn-start" type="button">Пройти тест</button>
+      </div>
+
+      <div class="bg-container">
+        <div class="features">
+          <p class="features__passage-time">Прохождение теста займет у вас не более <span
+              class="features__passage-time--bold">12 минут</span> , а его результаты вы сможете <span
+              class="features__passage-time--bold">использовать всю жизнь.</span>
+          </p>
+
+          <div class="features__text-container">
+            <p class="features__text">Профессиональная интерпретация и детально <span
+                class="features__text--highlight">проработанные рекомендации</span>
+              позволят вам качественно <span class="features__text--highlight">изменить все аспекты своей жизни:</span>
+              от финансового до любовного.
+            </p>
+          </div>
+
+          <button class="features__button" type="button">Пройти тест</button>
+        </div>
+
+        <p class="copyright-sign">&#169 2019</p>
+      </div>
+
+    </section>
+
+    <section id="test" class="test is-none">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <form class="iq-test">
+        <ul class="iq-test__list"></ul>
+
+        <button type="submit" class="test__btn-next" disabled>Далее</button>
+      </form>
+
+    </section>
+
+    <section id="result" class="result is-none">
+      <div class="result__container">
+        <div>
+          <p class="result__title">Ваш результат рассчитан:</p>
+
+          <p class="result__own-result"><span class="result__own-result-bold">Вы относитесь к 3%</span> респондентов,
+            чей
+            уровень интеллекта более чем на 15 пунктов отличается от среднего в большую или меньшую сторону!</p>
+
+          <h2 class="result__get-result">Скорее получите свой результат!</h2>
+
+          <div class="result__saved-data-container">
+            <p class="result__saved-data">В целях защиты персональных данных результат теста, их подробная интерпретация
+              и
+              рекомендации доступны в виде голосового сообщения по звонку с вашего мобильного телефона
+            </p>
+          </div>
+
+          <p class="result__call-text">Звоните скорее, запись доступна всего <br> <span
+              class="result__timer">10:00</span>
+            <span class="result__time">минут</span>
+          </p>
+
+          <button class="result__call-button">
+            <span class="result__icon-block"><svg width="29" height="29">
+                <use class="result__icon-call" href="./images/symbol-defs.svg#call"></use>
+              </svg></span>
+            Позвонить и прослушать результат</button>
+
+          <div class="api-data is-none"></div>
+        </div>
+
+        <p class="result__additional">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI
+          DECLARATI CA AVETI 18 ANI IMPLINITI,</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

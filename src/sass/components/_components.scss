@@ -1,0 +1,28 @@
+.btn-start {
+  margin: 0 auto;
+  display: block;
+
+  width: 189px;
+  height: 41px;
+  padding: 10px 17px;
+
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0d0c11;
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  border-radius: 20px;
+  border: 0;
+  transition: transform 300ms ease, color 300ms ease;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+}

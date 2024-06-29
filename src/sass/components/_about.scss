@@ -1,0 +1,75 @@
+.about {
+  padding: 84px 38px 48px 38px;
+  position: relative;
+  background-color: radial-gradient(
+    118.67% 50% at 50% 50%,
+    #18356f 0%,
+    #0b296a 72.92%,
+    #0d2053 100%
+  );
+  background-image: radial-gradient(
+      84.34% 50.29% at 48.75% 49.71%,
+      #2950c2 0%,
+      rgba(38, 91, 199, 0.96) 50.62%,
+      rgba(39, 98, 187, 0) 85.42%
+    ),
+    url('../images/bg-about.jpg'),
+    radial-gradient(
+      118.67% 50% at 50% 50%,
+      #18356f 0%,
+      #0b296a 72.92%,
+      #0d2053 100%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/bg-about@2x.jpg');
+  }
+
+  @media screen and (min-width: 550px) {
+    padding: 160px 80px;
+    background-size: 768px;
+  }
+}
+
+.about-container {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.about__text {
+  margin: 0 auto;
+  max-width: 610px;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  line-height: calc(23 / 18);
+  text-align: center;
+}
+
+.about__quotes-up {
+  position: absolute;
+  top: -50px;
+  left: -9px;
+
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.about__quotes-down {
+  position: absolute;
+  bottom: -28px;
+  right: -7px;
+
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.about__svg {
+  @media screen and (min-width: 768px) {
+  }
+}

@@ -1,0 +1,111 @@
+.bg-container {
+  padding: 54px 8px 15px 8px;
+  background-image: url('../images/lightning1.png'),
+    url('../images/lightning2.png'), url('../images/feature-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: auto, auto, 768px;
+  background-position: 100% 18%, 0 87%, top;
+  margin: 0 auto;
+  max-width: 768px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/lightning1.png'),
+      url('../images/lightning2.png'), url('../images/feature-bg@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 54px 60px 15px 60px;
+    background-size: auto, auto, 768px;
+  }
+}
+
+.features {
+  margin-bottom: 52px;
+}
+
+.features__passage-time {
+  max-width: 262px;
+  margin-bottom: 14px;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+.features__passage-time--bold {
+  margin-bottom: 14px;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffc700;
+}
+
+.features__text-container {
+  margin-bottom: 33px;
+  padding: 29px 15px 30px 14px;
+  background: rgba(243, 243, 242, 0.8);
+  border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 650px;
+    margin-bottom: 40px;
+  }
+}
+
+.features__text {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: #181818;
+}
+
+.features__text--highlight {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #181818;
+}
+
+.features__button {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 44px;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  transition: color 300ms ease, border-color 300ms ease;
+  &:hover,
+  &:focus {
+    color: #ffc700;
+    border-color: #ffc700;
+  }
+}
+
+.copyright-sign {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: calc(23 / 10);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}

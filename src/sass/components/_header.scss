@@ -1,0 +1,126 @@
+.header__container {
+  height: 46px;
+  display: flex;
+  gap: 9px;
+
+  @media screen and (min-width: 768px) {
+    height: 60px;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
+.header__menu-open {
+  margin: 17px 0 0 15px;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+
+  &:hover .mob-menu__icon-menu,
+  &:focus .mob-menu__icon-menu {
+    fill: #ffc700;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.mob-menu__icon {
+  width: 30px;
+  height: 22px;
+}
+
+.header__icon {
+  width: 48px;
+  height: 46px;
+}
+
+.mob-menu__icon-menu {
+  fill: #696969;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.header__subcontainer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  padding-top: 110px;
+  padding-left: 23px;
+  background-color: #181818;
+  overflow-y: scroll;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 450px) {
+    height: 50%;
+  }
+}
+
+.mob-menu__btn-close {
+  padding: 0;
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  &:hover .mob-menu__icon-close,
+  &:focus .mob-menu__icon-close {
+    fill: #ffc700;
+  }
+}
+
+.mob-menu__icon-close {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+}
+
+.navigation__link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #f4ce0c;
+  }
+}
