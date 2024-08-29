@@ -21,3 +21,4 @@ ${
     <div class="iq-test__label-container">${variants.join('')}</div>
   </li>`;
 }
+:
